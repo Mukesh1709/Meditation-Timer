@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meditation Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Meditation Timer</h1>
+    <div class="timer">
+      <div class="progress-bar"></div>
+      <div class="time-display">10:00</div>
+    </div>
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+    <div class="music-options">
+      <label for="music-select">Choose Music:</label>
+      <select id="music-select">
+        <option value="none">None</option>
+        <option value="rain">Rain Sounds</option>
+        <option value="ocean">Ocean Waves</option>
+        <option value="forest">Forest Ambience</option>
+      </select>
+    </div>
+    <div class="video-background">
+      <video autoplay muted loop id="myVideo">
+          <source src="./video/meditashion.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+    <audio id="audio" loop>
+      <source src="./video/Krishna_Flute_Music(128k).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
